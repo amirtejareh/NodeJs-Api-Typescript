@@ -1,0 +1,19 @@
+{
+  "include": ["./server.ts", "**/*.ts"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./build",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@framework": [""]
+    }
+  },
+  "exclude": ["./node_modules"]
+}
