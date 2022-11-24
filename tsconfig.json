@@ -12,7 +12,9 @@
     "esModuleInterop": true,
     "baseUrl": "./src",
     "paths": {
-      "@framework": [""]
+      "@framework": [""],
+      "@framework/routes": ["routes"],
+      "@framework/http": ["http"]
     }
   },
   "exclude": ["./node_modules"]
