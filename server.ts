@@ -1,4 +1,7 @@
 import StartApplication from "@framework";
-import dotenv from "dotenv";
-dotenv.config();
+import "dotenv/config";
+import * as config from "./config";
+
+global.config = config;
+
 new StartApplication();
